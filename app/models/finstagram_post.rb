@@ -25,4 +25,6 @@ class FinstagramPost < ActiveRecord::Base
       self.comments.size
     end
     # New Stuff End
+
+    validates :photo_url, :user, presence: true
   end
